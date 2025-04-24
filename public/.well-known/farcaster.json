@@ -9,7 +9,7 @@
     "name": "OnChainGM",
     "iconUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "homeUrl": "https://onchaingm-teal.vercel.app/",
-    "imageUrl": "https://onchaingm-teal.vercel.app/frame.png",
+    "imageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "buttonTitle": "Say GM!",
     "splashImageUrl": "https://onchaingm-teal.vercel.app/frame.png",
     "splashBackgroundColor": "#222234"
