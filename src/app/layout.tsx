@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* Farcaster */}
         <meta
           name="fc:frame"
-          content='{"accountAssociation":{"header":"eyJmaWQiOjg3NjM4NiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQyYzc4QTM3RjYxNjE1M0U5ZmY1RDc5RmY2MjlCNGQ5QTM5MDREMTUifQ","payload":"eyJkb21haW4iOiJvbmNoYWluZ20tdGVhbC52ZXJjZWwuYXBwIn0","signature":"MHgzNDY0MzY3M2EyMTU0Y2M4YzVhN2E4ZTkxNDNkNWIxNzMzMzZkM2M5M2JlZWM4OTllMGI4MjFkNDYwM2M0MjZjMDA5NWU2ZDYyMGViMjEyNzc2NGZlZjU0MmJjOWQ5ZDA1ZDk4OTdhYjRjZjU0ZjVjMGIyMWRmYTg4YWEzYzc3MTFj"},"frame":{"version":"1","name":"GM!","iconUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","homeUrl":"https://onchaingm-teal.vercel.app/","imageUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","buttonTitle":"Say GM!","splashImageUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","splashBackgroundColor":"#222234"}}'
+          content='{"version":"1","imageUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"GM!","url":"https://onchaingm-teal.vercel.app/","splashImageUrl":"https://onchaingm-teal.vercel.app/splash.png","splashBackgroundColor":"#222234"}}}'
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

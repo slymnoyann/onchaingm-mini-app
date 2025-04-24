@@ -5,13 +5,13 @@
     "signature": "MHgzNDY0MzY3M2EyMTU0Y2M4YzVhN2E4ZTkxNDNkNWIxNzMzMzZkM2M5M2JlZWM4OTllMGI4MjFkNDYwM2M0MjZjMDA5NWU2ZDYyMGViMjEyNzc2NGZlZjU0MmJjOWQ5ZDA1ZDk4OTdhYjRjZjU0ZjVjMGIyMWRmYTg4YWEzYzc3MTFj"
   },
   "frame": {
-    "version": "1",
+    "version": "next",
     "name": "GM!",
     "iconUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "homeUrl": "https://onchaingm-teal.vercel.app/",
     "imageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "buttonTitle": "Say GM!",
-    "splashImageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
+    "splashImageUrl": "https://onchaingm-teal.vercel.app/splash.png",
     "splashBackgroundColor": "#222234"
   }
 }
