@@ -9,9 +9,9 @@
     "name": "OnChainGM",
     "iconUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "homeUrl": "https://onchaingm-teal.vercel.app/",
-    "imageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
+    "imageUrl": "https://onchaingm-teal.vercel.app/social-card.png",
     "buttonTitle": "Say GM!",
-    "splashImageUrl": "https://onchaingm-teal.vercel.app/splash.png",
+    "splashImageUrl": "https://onchaingm-teal.vercel.app/social-card.png",
     "splashBackgroundColor": "#222234"
   }
 }

@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* Farcaster */}
         <meta
           name="fc:frame"
-          content='{"version":"next","imageUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm-teal.vercel.app/","splashImageUrl":"https://onchaingm-teal.vercel.app/splash.png","splashBackgroundColor":"#222234"}}}'
+          content='{"version":"next","imageUrl":"https://onchaingm-teal.vercel.app/social-card.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm-teal.vercel.app/","splashImageUrl":"https://onchaingm-teal.vercel.app/social-card.png","splashBackgroundColor":"#222234"}}}'
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
