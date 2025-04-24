@@ -1,15 +1,15 @@
 {
   "accountAssociation": {
-    "header": "eyJmaWQiOjM2MjEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyY2Q4NWEwOTMyNjFmNTkyNzA4MDRBNkVBNjk3Q2VBNENlQkVjYWZFIn0",
-    "payload": "eyJkb21haW4iOiJ5b2luay5wYXJ0eSJ9",
-    "signature": "MHgwZmJiYWIwODg3YTU2MDFiNDU3MzVkOTQ5MDRjM2Y1NGUxMzVhZTQxOGEzMWQ5ODNhODAzZmZlYWNlZWMyZDYzNWY4ZTFjYWU4M2NhNTAwOTMzM2FmMTc1NDlmMDY2YTVlOWUwNTljNmZiNDUxMzg0Njk1NzBhODNiNjcyZWJjZTFi"
+    "header": "eyJmaWQiOjg3NjM4NiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQyYzc4QTM3RjYxNjE1M0U5ZmY1RDc5RmY2MjlCNGQ5QTM5MDREMTUifQ",
+    "payload": "eyJkb21haW4iOiJvbmNoYWluZ20tdGVhbC52ZXJjZWwuYXBwIn0",
+    "signature": "MHgzNDY0MzY3M2EyMTU0Y2M4YzVhN2E4ZTkxNDNkNWIxNzMzMzZkM2M5M2JlZWM4OTllMGI4MjFkNDYwM2M0MjZjMDA5NWU2ZDYyMGViMjEyNzc2NGZlZjU0MmJjOWQ5ZDA1ZDk4OTdhYjRjZjU0ZjVjMGIyMWRmYTg4YWEzYzc3MTFj"
   },
   "frame": {
     "version": "1",
     "name": "GM!",
     "iconUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
-    "homeUrl": "https://onchaingm-teal.vercel.app/frame/",
-    "imageUrl": "https://onchaingm-teal.vercel.app/frame/image",
+    "homeUrl": "https://onchaingm-teal.vercel.app/",
+    "imageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "buttonTitle": "Say GM!",
     "splashImageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
     "splashBackgroundColor": "#222234"
