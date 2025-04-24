@@ -24,7 +24,7 @@ function Provider() {
 export default Provider;
 
 function Page() {
-  let { isConnected } = useAccount();
+  const { isConnected } = useAccount();
 
   useEffect(() => {
     sdk.actions.ready();
