@@ -1,17 +1,17 @@
 {
   "accountAssociation": {
-    "header": "eyJmaWQiOjg3NjM4NiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQyYzc4QTM3RjYxNjE1M0U5ZmY1RDc5RmY2MjlCNGQ5QTM5MDREMTUifQ",
-    "payload": "eyJkb21haW4iOiJvbmNoYWluZ20tdGVhbC52ZXJjZWwuYXBwIn0",
-    "signature": "MHgzNDY0MzY3M2EyMTU0Y2M4YzVhN2E4ZTkxNDNkNWIxNzMzMzZkM2M5M2JlZWM4OTllMGI4MjFkNDYwM2M0MjZjMDA5NWU2ZDYyMGViMjEyNzc2NGZlZjU0MmJjOWQ5ZDA1ZDk4OTdhYjRjZjU0ZjVjMGIyMWRmYTg4YWEzYzc3MTFj"
+    "header": "eyJmaWQiOjEwNDYzMzMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg4OTRCQTFlQmE0MDZCOUE3ZjA5MjcyQjg3MDRiQ0ZFODFDMUU1RTFkIn0",
+    "payload": "eyJkb21haW4iOiJtaW5pYXBwcy5vbmNoYWluZ20uY29tIn0",
+    "signature": "MHg0ODE1YWM5Mjc1MjIzNWZlNWExNWVmYzZiZTkzMGExNmI3Y2ZhMjlmMTAwZGYxYWM3YWQxNDk0ZTU4Y2JmODY0NTI2MDdjODNjNjMzMDIzY2ZhYWRjNTdmZjM1YmM5YjJjYmUxMDY2MTU5MjA1N2I1ZWMyYjU2MGZiYzAzOTc3NTFi"
   },
   "frame": {
     "version": "next",
     "name": "OnChainGM",
-    "iconUrl": "https://onchaingm.com/gm-icon.png",
+    "iconUrl": "https://onchaingm.com/gm-icon-2.png",
     "homeUrl": "https://onchaingm.com/",
     "imageUrl": "https://onchaingm.com/frame.png",
-    "buttonTitle": "Say GM!",
-    "splashImageUrl": "https://onchaingm.com/gm-icon.png",
+    "buttonTitle": "Say GM",
+    "splashImageUrl": "https://onchaingm.com/gm-icon-2.png",
     "splashBackgroundColor": "#222234"
   }
 }
