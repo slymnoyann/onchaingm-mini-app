@@ -28,34 +28,32 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/png"
-          href="https://onchaingm-teal.vercel.app/gm-icon.png"
+          href="https://onchaingm.com/gm-icon.png"
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href="https://onchaingm-teal.vercel.app/gm-icon.png"
+          href="https://onchaingm.com/gm-icon.png"
           sizes="96x96"
         />
         <link
           rel="icon"
           type="image/png"
-          href="https://onchaingm-teal.vercel.app/gm-icon.png"
+          href="https://onchaingm.com/gm-icon.png"
           sizes="192x192"
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="https://onchaingm-teal.vercel.app/gm-icon.png"
+          href="https://onchaingm.com/gm-icon.png"
         />
-        <link
-          rel="manifest"
-          href="https://onchaingm-teal.vercel.app/site.webmanifest"
-        />
+        <link rel="manifest" href="https://onchaingm.com/site.webmanifest" />
         {/* Farcaster */}
+        {/* Eklenecek Meta Tag, content kısmı farcaster.json dosyasındaki frame kısmının string hali olmalı. */}
         <meta
           name="fc:frame"
-          content='{"version":"next","imageUrl":"https://onchaingm-teal.vercel.app/frame.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm-teal.vercel.app/","splashImageUrl":"https://onchaingm-teal.vercel.app/gm-icon.png","splashBackgroundColor":"#222234"}}}'
+          content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon.png","splashBackgroundColor":"#222234"}}}'
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -7,11 +7,11 @@
   "frame": {
     "version": "next",
     "name": "OnChainGM",
-    "iconUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
-    "homeUrl": "https://onchaingm-teal.vercel.app/",
-    "imageUrl": "https://onchaingm-teal.vercel.app/frame.png",
+    "iconUrl": "https://onchaingm.com/gm-icon.png",
+    "homeUrl": "https://onchaingm.com/",
+    "imageUrl": "https://onchaingm.com/frame.png",
     "buttonTitle": "Say GM!",
-    "splashImageUrl": "https://onchaingm-teal.vercel.app/gm-icon.png",
+    "splashImageUrl": "https://onchaingm.com/gm-icon.png",
     "splashBackgroundColor": "#222234"
   }
 }
