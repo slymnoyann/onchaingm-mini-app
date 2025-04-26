@@ -23,6 +23,10 @@ function Provider() {
 
 export default Provider;
 
+async function init() {
+  await sdk.actions.openUrl("https://onchaingm.com/");
+}
+
 function Page() {
   const { isConnected } = useAccount();
 
@@ -31,15 +35,22 @@ function Page() {
   }, []);
 
   useEffect(() => {
-    async function init() {
-      await sdk.actions.openUrl("https://onchaingm.com/");
-    }
-    init();
+    init().then(() => {});
   }, [isConnected]);
 
   if (!isConnected) return;
 
   return (
-    <div style={{ height: "100vh", width: "100vw", display: "flex" }}></div>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="flex flex-col gap-2">
+        <p className="text-xl font-bold">Please Visit OnChainGM Website!</p>
+        <button
+          onClick={async () => await init()}
+          className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Visit website.
+        </button>
+      </div>
+    </div>
   );
 }
