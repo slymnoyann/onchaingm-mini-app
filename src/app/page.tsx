@@ -30,14 +30,16 @@ function Page() {
     sdk.actions.ready();
   }, []);
 
+  useEffect(() => {
+    async function init() {
+      await sdk.actions.openUrl("https://onchaingm.com/");
+    }
+    init();
+  }, [isConnected]);
+
   if (!isConnected) return;
 
   return (
-    <div style={{ height: "100vh", width: "100vw", display: "flex" }}>
-      <iframe
-        src="https://onchaingm.com"
-        style={{ width: "100%", border: 0 }}
-      ></iframe>
-    </div>
+    <div style={{ height: "100vh", width: "100vw", display: "flex" }}></div>
   );
 }
