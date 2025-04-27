@@ -27,32 +27,70 @@ async function init() {
   await sdk.actions.openUrl("https://onchaingm.com/");
 }
 
+enum MobileState {
+  LOADING = 0,
+  MOBILE = 1,
+  DESKTOP = 2,
+}
+
 function Page() {
   const { isConnected } = useAccount();
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const [mobileState, setMobileState] = useState<MobileState>(
+    MobileState.LOADING
+  );
 
   useEffect(() => {
     sdk.actions.ready();
-    
-    const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
-    const mobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
-    setIsMobile(mobile);
 
-    if (mobile) {
-      window.location.href = "https://onchaingm.com";
-    }
+    const userAgent =
+      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile =
+      /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|Warpcast/i.test(
+        userAgent
+      );
+
+    setMobileState(mobile ? MobileState.MOBILE : MobileState.DESKTOP);
   }, []);
 
   useEffect(() => {
-    if(isMobile){
+    if (mobileState == MobileState.MOBILE) {
       init().then(() => {});
-  }
+    }
+  }, [isConnected, mobileState]);
 
-  }, [isConnected]);
+  return (
+    <>
+      {(() => {
+        switch (mobileState) {
+          case MobileState.MOBILE:
+            return <Mobile />;
+          case MobileState.DESKTOP:
+            return (
+              <iframe
+                src="https://onchaingm.com"
+                style={{
+                  width: "100%",
+                  height: "100vh",
+                  border: "none",
+                }}
+                title="OnChainGM"
+              />
+            );
+          case MobileState.LOADING:
+          default:
+            return (
+              <div className="w-screen h-screen flex justify-center items-center text-4xl">
+                Loading...
+              </div>
+            );
+        }
+      })()}
+    </>
+  );
+}
 
-  if (!isConnected) return;
-
-  if(isMobile) return (
+function Mobile() {
+  return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="flex flex-col gap-2">
         <p className="text-xl font-bold">Please Visit OnChainGM Website!</p>
@@ -65,14 +103,4 @@ function Page() {
       </div>
     </div>
   );
-
-  return <iframe
-      src="https://onchaingm.com"
-      style={{
-        width: "100%",
-        height: "100vh",
-        border: "none",
-      }}
-      title="OnChainGM"
-    />
 }
