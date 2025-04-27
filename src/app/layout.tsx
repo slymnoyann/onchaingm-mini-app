@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ReactNode, useEffect, useState } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,44 @@ export const metadata: Metadata = {
   title: "OnChainGM",
   description: "OnChainGM",
 };
+
+function DeviceBasedContent({ children }: { children: ReactNode }) {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
+    setIsMobile(mobile);
+
+    if (mobile) {
+      // Mobilse direkt yönlendir
+      window.location.href = "https://onchaingm.com";
+    }
+  }, []);
+
+  if (isMobile === null) {
+    // İlk yüklenirken boş göster (opsiyonel, istersen bir loading ekranı koyarsın)
+    return null;
+  }
+
+  if (isMobile) {
+    // Mobil kullanıcı zaten yönlendirildiği için burada bir şey göstermeye gerek yok
+    return null;
+  }
+
+  // PC kullanıcıları için iframe göster
+  return (
+    <iframe
+      src="https://onchaingm.com"
+      style={{
+        width: "100%",
+        height: "100vh",
+        border: "none",
+      }}
+      title="OnChainGM"
+    />
+  );
+}
 
 export default function RootLayout({
   children,
@@ -49,19 +88,16 @@ export default function RootLayout({
           href="https://onchaingm.com/gm-icon.png"
         />
         <link rel="manifest" href="https://onchaingm.com/site.webmanifest" />
-        {/* Farcaster */}
-        {/* Eklenecek Meta Tag, content kısmı farcaster.json dosyasındaki frame kısmının string hali olmalı. */}
         <meta
           name="fc:frame"
           content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Visit OnChainGM","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon.png","splashBackgroundColor":"#222234"}}}'
         />
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <DeviceBasedContent>{children}</DeviceBasedContent>
       </body>
     </html>
   );
