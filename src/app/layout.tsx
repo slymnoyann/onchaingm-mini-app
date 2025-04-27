@@ -27,7 +27,7 @@ export default function RootLayout({
       <head>
         {/* senin link ve meta taglar burada */}
       </head>
-      <body className={${geistSans.variable} ${geistMono.variable} antialiased}>
+       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
          {children}
       </body>
     </html>
