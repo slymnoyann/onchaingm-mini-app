@@ -29,7 +29,8 @@ export default function RootLayout({
         {/* senin link ve meta taglar burada */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <DeviceBasedContent>{children}</DeviceBasedContent>
+        <DeviceBasedContent />
+         {children}
       </body>
     </html>
   );
