@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "OnChainGM",
-  description: "OnChainGM - Farcaster Frame",
+  description: "OnChainGM",
 };
 
 export default function RootLayout({
@@ -53,7 +53,7 @@ export default function RootLayout({
         {/* Eklenecek Meta Tag, content kısmı farcaster.json dosyasındaki frame kısmının string hali olmalı. */}
         <meta
           name="fc:frame"
-          content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Say GM!","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon.png","splashBackgroundColor":"#222234"}}}'
+          content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Visit OnChainGM","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon.png","splashBackgroundColor":"#222234"}}}'
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
