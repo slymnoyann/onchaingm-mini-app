@@ -3,7 +3,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { sdk } from "@farcaster/frame-sdk";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useAccount } from "wagmi";
 
 import { WagmiProvider } from "wagmi";
@@ -29,18 +29,30 @@ async function init() {
 
 function Page() {
   const { isConnected } = useAccount();
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
     sdk.actions.ready();
+    
+    const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
+    setIsMobile(mobile);
+
+    if (mobile) {
+      window.location.href = "https://onchaingm.com";
+    }
   }, []);
 
   useEffect(() => {
-    init().then(() => {});
+    if(isMobile){
+      init().then(() => {});
+  }
+
   }, [isConnected]);
 
   if (!isConnected) return;
 
-  return (
+  if(isMobile) return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="flex flex-col gap-2">
         <p className="text-xl font-bold">Please Visit OnChainGM Website!</p>
@@ -53,4 +65,14 @@ function Page() {
       </div>
     </div>
   );
+
+  return <iframe
+      src="https://onchaingm.com"
+      style={{
+        width: "100%",
+        height: "100vh",
+        border: "none",
+      }}
+      title="OnChainGM"
+    />
 }
