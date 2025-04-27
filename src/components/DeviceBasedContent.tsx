@@ -1,5 +1,5 @@
 "use client";
-
+import {useState, useEffect} from "react";
 export default function DeviceBasedContent() {
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
