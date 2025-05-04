@@ -1,9 +1,9 @@
 {
   "accountAssociation": {
     "header": "eyJmaWQiOjEwNDYzMzMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg4OTRCQTFlQmE0MDZCOUE3ZjA5MjcyQjg3MDRiQ0ZFODFDMUU1RTFkIn0",
-    "payload": "eyJkb21haW4iOiJtaW5pYXBwcy5vbmNoYWluZ20uY29tIn0",
-    "signature": "MHg0ODE1YWM5Mjc1MjIzNWZlNWExNWVmYzZiZTkzMGExNmI3Y2ZhMjlmMTAwZGYxYWM3YWQxNDk0ZTU4Y2JmODY0NTI2MDdjODNjNjMzMDIzY2ZhYWRjNTdmZjM1YmM5YjJjYmUxMDY2MTU5MjA1N2I1ZWMyYjU2MGZiYzAzOTc3NTFi"
-  },
+    "payload": "eyJkb21haW4iOiJtaW5pYXBwLm9uY2hhaW5nbS5jb20ifQ",
+    "signature": "MHhlZmI3ODY2OWVhYzJjMjI3YmU5YzI2NGFlZjFmMTJlMjhkNTE2MjFiMDUxYjRlYzM4ZWQ0NmJjN2JkYjU5ODUzMTM1ZTVkY2RiODI5ZDI4YTczNWNhYTQ5YzI2OTFlMWYxZGRmMzQ4ZWQzOTlhOTFhM2Y5NzBiNGUzMjY2NjY5ODFj"
+  }
   "frame": {
     "version": "next",
     "name": "OnChainGM",
