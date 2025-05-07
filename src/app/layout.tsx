@@ -27,7 +27,7 @@ export default function RootLayout({
       <head>
          <meta
           name="fc:frame"
-          content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Visit OnChainGM","action":{"type":"launch_frame","name":"OnChainGM","url":"https://onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon-2.png","splashBackgroundColor":"#222234"}}}
+          content='{"version":"next","imageUrl":"https://onchaingm.com/frame.png","button":{"title":"Visit OnChainGM","action":{"type":"launch_frame","name":"OnChainGM","url":"https://miniapp.onchaingm.com/","splashImageUrl":"https://onchaingm.com/gm-icon-2.png","splashBackgroundColor":"#222234"}}}
 ' 
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
